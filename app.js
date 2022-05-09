@@ -28,15 +28,3 @@ app.get('/',(req,res)=>{
 app.listen(3000,()=>{
     console.log('servidor en puerto 3000...')
 });
-
-
-//Rutas
-app.get('/', (request, response) => {
-    response.sendFile('index.html')
-})
-
-app.get('/index', (request, response) => {
-    response.send({
-        nombre: 'EL BICHO'
-    })
-})
